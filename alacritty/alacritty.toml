@@ -1,0 +1,23 @@
+import = ["~/.config/alacritty/themes/breeze.toml"]
+
+[font]
+size = 15.0
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[window]
+dimensions = { columns = 75, lines = 23 }
+decorations = "None"
+dynamic_padding = false
+opacity = 0.95
+
+[window.padding]
+x = 10
+y = 10
+
+[keyboard]
+bindings = [
+{ key = "Enter", mods = "Alt", action = "ToggleFullscreen" }
+]
