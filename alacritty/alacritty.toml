@@ -1,7 +1,7 @@
 import = ["/home/.config/alacritty/themes/breeze.toml"]
 
 [font]
-size = 15.0
+size = 16.0
 
 [font.normal]
 family = "Hack Nerd Font"
@@ -10,11 +10,8 @@ style = "Regular"
 [window]
 dimensions = { columns = 76, lines = 22 }
 dynamic_padding = true
-dynamic_title = false 
-
-[window.padding]
-x = 2
-# y = 4
+dynamic_title = false
+padding = { x = 2, y = 0 }
 
 [keyboard]
 bindings = [
