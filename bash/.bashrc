@@ -90,9 +90,18 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# alias ll='ls -alF'
+# alias la='ls -A'
+# alias l='ls -CF'
+
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='exa -alF --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias l='exa -F --icons --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
+
+alias fsb='~/fuzzy-git/fsb.sh'
+alias fshow='~/fuzzy-git/fshow.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -147,7 +156,7 @@ alias gl='git log'
 alias gd='git diff'
 alias ..='cd ..'
 alias ll='ls -alF --color=auto'
-alias tmux='tmux -u'
+alias tmux='tmux -u new-session -A -s jaymux'
 alias bat='batcat'
 
 export LC_ALL=en_IN.UTF-8
@@ -172,7 +181,5 @@ blue="#06BCE4"
 cyan="#2CF9ED"
 
 export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
-
-source ~/fzf-git.sh/fzf-git.sh
 
 export PATH="~/.local/bin/bat:$PATH"
