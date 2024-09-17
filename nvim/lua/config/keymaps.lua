@@ -19,3 +19,4 @@ vim.keymap.set('n', '<S-Tab>', ':bp<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>d', ':bd<CR>', {noremap = true, silent = true})
 
 vim.keymap.set('n', '<leader><C-a>', 'gg<S-v>g<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<leader>/', ':noh<CR>', {noremap = true, silent = true})
