@@ -1,7 +1,5 @@
-import = ["/home/.config/alacritty/themes/breeze.toml"]
-
 [font]
-size = 16.0
+size = 17.0
 
 [font.normal]
 family = "Hack Nerd Font"
@@ -11,7 +9,6 @@ style = "Regular"
 dimensions = { columns = 76, lines = 22 }
 dynamic_padding = true
 dynamic_title = false
-padding = { x = 2, y = 0 }
 
 [keyboard]
 bindings = [
@@ -21,21 +18,21 @@ bindings = [
 # Default colors
 [colors.primary]
 background = '#080808'
-foreground = '#fcfcfc'
+foreground = '#ffffff'
 
 dim_foreground = '#eff0f1'
 bright_foreground = '#ffffff'
 
 # Normal colors
 [colors.normal]
-black = '#232627'
-red = '#ed1515'
-green = '#11d116'
-yellow = '#fdce4b'
-blue = '#1d99f3'
-magenta = '#9b59b6'
-cyan = '#1abc9c'
-white = '#fcfcfc'
+black = '#2c3033'    
+red = '#ff3030'     
+green = '#22ff22'    
+yellow = '#ffd966'  
+blue = '#3399ff'    
+magenta = '#b569d6'  
+cyan = '#2ed9c3'     
+white = '#ffffff'    
 
 # Bright colors
 [colors.bright]

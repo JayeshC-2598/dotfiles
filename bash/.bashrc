@@ -90,18 +90,25 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-# alias ll='ls -alF'
+# alias ll='ls -alF --color=auto'
 # alias la='ls -A'
 # alias l='ls -CF'
 
 alias ls='exa --icons --color=always --group-directories-first'
-alias ll='exa -alF --icons --color=always --group-directories-first'
+alias ll='exa -aglF --icons --color=always --group-directories-first'
 alias la='exa -a --icons --color=always --group-directories-first'
 alias l='exa -F --icons --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
-alias fsb='~/fuzzy-git/fsb.sh'
-alias fshow='~/fuzzy-git/fshow.sh'
+alias fsb='~/scripts/fsb.sh'
+alias fshow='~/scripts/fshow.sh'
+alias g='git'
+alias gaa='git add .'
+alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
+alias ..='cd ..'
+alias tmux='tmux -u new-session -A -s jaymux'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -126,60 +133,45 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+. "$HOME/.cargo/env"
+. "/usr/share/autojump/autojump.sh"
 
-parse_git_branch() {
- git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
-yellow=$(tput setaf 214)
-blue=$(tput setaf 33)
-lightgreen=$(tput setaf 42)
-green=$(tput setaf 34)
-cyan=$(tput setaf 45)
-red=$(tput setaf 196)
-white=$(tput setaf 255)
-bold=$(tput bold)
-
-export PS1="${red}[${lightgreen}\u${blue}@${cyan}\h${white}: ${bold}${yellow}\W${red}] ${green}\$(parse_git_branch) \n${white}☯ "
-# export PS1="\[$(tput setaf 214)\]\W \[$(tput setaf 34)\]\$(parse_git_branch)\[$(tput sgr0)\]☯ "
-
-[[ -s /usr/share/autojump/autojump.sh ]] && . /usr/share/autojump/autojump.sh
-
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#  tmux -u
-# :fi
-
-alias g='git'
-alias gaa='git add .'
-alias gs='git status'
-alias gl='git log'
-alias gd='git diff'
-alias ..='cd ..'
-alias ll='ls -alF --color=auto'
-alias tmux='tmux -u new-session -A -s jaymux'
-alias bat='batcat'
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export LC_ALL=en_IN.UTF-8
 export LANG=en_IN.UTF-8
 
 LS_COLORS=$LS_COLORS:'ow=1;33' ; export LS_COLORS
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# ---- FZF -----
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # --- setup fzf theme ---
 fg="#E2DFD2"
-bg="#080808"
+# bg="#080808"
 # bg_highlight="#143652"
-bg_highlight="#080808"
+# bg_highlight="#080808"
 purple="#B388FF"
 blue="#06BCE4"
 cyan="#2CF9ED"
 
-export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+# export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
-export PATH="~/.local/bin/bat:$PATH"
+export FZF_DEFAULT_OPTS="--color=fg:${fg},fg+:${fg},hl:${purple},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+
+# parse_git_branch() {
+#  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+# }
+#
+# yellow=$(tput setaf 214)
+# blue=$(tput setaf 33)
+# lightgreen=$(tput setaf 42)
+# green=$(tput setaf 34)
+# cyan=$(tput setaf 45)
+# red=$(tput setaf 196)
+# white=$(tput setaf 255)
+# bold=$(tput bold)
+# reset=$(tput sgr0)
+#
+# export PS1="${bold}${red}[${lightgreen}\u${blue}@${cyan}\h${white}: ${yellow}\W${red}] ${green}\$(parse_git_branch) \n${white}☯ ${reset}"
