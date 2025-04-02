@@ -17,6 +17,5 @@ vim.keymap.set('n', '<leader>d', ':bd<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>aa', 'ggv<S-g><CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>/', ':noh<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>hf', ':Telescope find_files hidden=true no_ignore=true<CR>', {noremap = true, silent = true})
-vim.keymap.set('n', '<leader>ll', ':$<CR>', {noremap = true, silent = true})
 
 vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })

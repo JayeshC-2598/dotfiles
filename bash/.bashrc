@@ -102,13 +102,14 @@ alias l.='exa -a | egrep "^\."'
 
 alias fsb='~/scripts/fsb.sh'
 alias fshow='~/scripts/fshow.sh'
+alias upgrade='~/scripts/upgrade.sh'
 alias g='git'
 alias gaa='git add .'
 alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
 alias ..='cd ..'
-alias tmux='tmux -u new-session -A -s jaymux'
+# alias tmux='tmux -u new-session -A -s jaymux'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
