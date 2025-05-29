@@ -113,7 +113,7 @@ alias ..='cd ..'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias alert='notify-send --urgency=normal -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -134,7 +134,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
+
 . "/usr/share/autojump/autojump.sh"
 
 export NVM_DIR="$HOME/.nvm"
@@ -176,3 +176,5 @@ export FZF_DEFAULT_OPTS="--color=fg:${fg},fg+:${fg},hl:${purple},hl+:${purple},i
 # reset=$(tput sgr0)
 #
 # export PS1="${bold}${red}[${lightgreen}\u${blue}@${cyan}\h${white}: ${yellow}\W${red}] ${green}\$(parse_git_branch) \n${white}☯ ${reset}"
+
+export PATH="$HOME/.local/bin:$PATH"
