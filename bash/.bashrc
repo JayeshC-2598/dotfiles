@@ -4,6 +4,17 @@
 
 eval "$(starship init bash)"
 
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export CLUTTER_IM_MODULE=fcitx
+export SDL_IM_MODULE=fcitx
+export GLFW_IM_MODULE=ibus
+
+# Set the GTK theme to dark
+export GTK_THEME=Yaru-blue-dark
+
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -159,7 +170,7 @@ cyan="#2CF9ED"
 
 # export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
-export FZF_DEFAULT_OPTS="--color=fg:${fg},fg+:${fg},hl:${purple},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+export FZF_DEFAULT_OPTS="--height=30% --min-height=1 --layout=reverse --color=fg:${fg},fg+:${fg},hl:${purple},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
 # parse_git_branch() {
 #  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'

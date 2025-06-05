@@ -1,0 +1,77 @@
+[global]
+    ### Appearance ###
+    font = Roboto Bold 14               # Font used in notifications
+    frame_width = 2                   # Width of the border around notification
+    frame_color = "#5e81ac"           # Border color
+    separator_color = auto            # Line between title and body
+
+    background = "#2e3440"            # Background color
+    foreground = "#eceff4"            # Text color
+    timeout = 5                       # Time (in seconds) before notification fades out
+
+    ### Positioning ###
+    width = 300                       # Width of the notification (in pixels)
+    height = 300                      # Height of the notification (in pixels)
+    offset = 10x40                    # Distance from screen edge (X x Y)
+    origin = top-right                # Where the notifications appear (top-right, top-left, etc.)
+
+    ### Transparency ###
+    transparency = 10                # 0–100 (0 = opaque, 100 = fully transparent)
+    corner_radius = 8                # Rounded corners (in pixels)
+
+    ### Notification stacking ###
+    notification_limit = 5           # Max visible notifications at once
+    indicate_hidden = yes            # Show count if some are hidden
+
+    ### Mouse interaction ###
+    mouse_left_click = do_action     # Click opens a URL/action
+    mouse_middle_click = close_current
+    mouse_right_click = close_all
+
+    ### Idle behavior ###
+    idle_threshold = 120             # Time (in seconds) of inactivity to pause notification timeout
+
+    ### History ###
+    history_length = 100             # Number of past notifications to store
+    show_indicators = yes            # Show a small progress bar on timeout
+    sticky_history = yes             # Prevent sticky notifications from being cleared from history
+
+    ### Follow focus ###
+    follow = mouse                   # Send notifications to monitor under mouse
+    monitor = 0                      # Set to -1 to follow active window
+
+    ### Formatting ###
+    format = "<b>%s</b>\n%b"         # How the notification looks: title then body (bold title)
+
+    ### Markup support ###
+    markup = full                    # Enable HTML-style markup: <b>, <i>, <u>
+
+    ### Other ###
+    show_age_threshold = 60          # Show age if notification is older than N seconds
+    word_wrap = yes
+    ellipsize = middle               # Ellipsize long lines in the middle
+
+[shortcuts]
+    close = ctrl+space               # Close current notification
+    close_all = ctrl+shift+space     # Close all notifications
+    history = ctrl+grave             # Show notification history
+    context = ctrl+shift+period      # Show context menu (actions)
+
+[urgency_low]
+    timeout = 3
+    background = "#2e3440"
+    foreground = "#81a1c1"
+    frame_color = "#4c566a"
+
+[urgency_normal]
+    timeout = 5
+    background = "#2e3440"
+    foreground = "#eceff4"
+    frame_color = "#5e81ac"
+
+[urgency_critical]
+    timeout = 0                      # Stays until closed manually
+    background = "#3b4252"
+    foreground = "#bf616a"
+    frame_color = "#bf616a"
+
