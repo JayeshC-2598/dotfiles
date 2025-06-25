@@ -1,0 +1,827 @@
+!SESSION 2025-06-11 13:40:26.214 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  --pipe=/run/user/1000/lsp-a44c58b7115ea62bb800c3c930385aa6.sock
+Command-line arguments:  -data /home/jayeshc/.config/Code/User/workspaceStorage/b4db65704b146a87d5e507798900891e/redhat.java/jdt_ws --pipe=/run/user/1000/lsp-a44c58b7115ea62bb800c3c930385aa6.sock
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:33.875
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:34.280
+!MESSAGE Started org.eclipse.buildship.core 277ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:34.282
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:35.545
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:35.822
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:35.831
+!MESSAGE Initializing Java Language Server 1.47.0.202505150330
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.434
+!MESSAGE ProjectRegistryRefreshJob finished 3150ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.735
+!MESSAGE Setting /usr/lib/jvm/java-17-openjdk-amd64 as 'JavaSE-17' environment (id:1749629437670)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.744
+!MESSAGE Setting java.home /usr/lib/jvm/java-17-openjdk-amd64 as default global VM
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.762
+!MESSAGE Default VM Install changed from  1749629437618-/home/jayeshc/.vscode/extensions/redhat.java-1.42.0-linux-x64/jre/21.0.7-linux-x86_64 to 1749629437670-/usr/lib/jvm/java-17-openjdk-amd64
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.788
+!MESSAGE JVM Runtimes changed, saving new configuration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.831
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.834
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.836
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.839
+!MESSAGE Non-Static Commands: [java.intellicode.enable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.842
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.844
+!MESSAGE Non-Static Commands: [java.gradle.delegateTest]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.846
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.847
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.848
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.849
+!MESSAGE Non-Static Commands: [java.project.refreshLib, java.project.checkImportStatus, java.project.list, java.project.generateJar, java.project.getMainClasses, java.getPackageData, java.resolvePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.850
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.850
+!MESSAGE Non-Static Commands: [vscode.java.test.jacoco.getCoverageDetail, vscode.java.test.findJavaProjects, vscode.java.test.findTestPackagesAndTypes, vscode.java.test.findTestTypesAndMethods, vscode.java.test.resolvePath, vscode.java.test.findTestLocation, vscode.java.test.get.testpath, vscode.java.test.findDirectTestChildrenForClass, vscode.java.test.navigateToTestOrTarget, vscode.java.test.junit.argument, vscode.java.test.generateTests]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.851
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.852
+!MESSAGE Non-Static Commands: [java.maven.initializeSearcher, java.maven.searchArtifact, java.maven.addDependency, java.maven.controlContext]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.905
+!MESSAGE RepositoryRegistryUpdateJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:37.956
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:38.008
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:38.211
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:39.525
+!MESSAGE Try to create an invisible project for the workspace /media/jayeshc/WORK/Programming/Java Programs/Practice
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:39.527
+!MESSAGE Creating the Java project Practice_76b22493
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:39.561
+!MESSAGE Finished creating the Java project Practice_76b22493
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:39.571
+!MESSAGE Successfully created a workspace invisible project Practice_76b22493
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:39.683
+!MESSAGE Workspace initialized in 1780ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:39.696
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:40.634
+!MESSAGE >> Updating classpath for project Practice_76b22493
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:41.596
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:42.742
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:42.743
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:42.760
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:42.875
+!MESSAGE Reconciled 1. Took 110 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:43.864
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:43.874
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:43.895
+!MESSAGE Validated 1. Took 405 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:44.181
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:44.587
+!MESSAGE Reconciled 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:45.299
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:45.303
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:45.305
+!MESSAGE Validated 1. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.085
+!MESSAGE Completion request completed
+
+!ENTRY java-debug 1 0 2025-06-11 13:40:52.114
+!MESSAGE Starting com.microsoft.java.debug.plugin
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.231
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.355
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.523
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.822
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.905
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:52.930
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.029
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.082
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.138
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.285
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.728
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.730
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:53.734
+!MESSAGE Validated 1. Took 47 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.014
+!MESSAGE onDidCompletionItemSelect:psvm
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.134
+!MESSAGE Reconciled 1. Took 42 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.569
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.570
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.571
+!MESSAGE Validated 1. Took 35 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.950
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:56.955
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:57.402
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:57.402
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:57.403
+!MESSAGE Validated 1. Took 47 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:57.600
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.038
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.039
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.041
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.330
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.399
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.568
+!MESSAGE Reconciled 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:58.716
+!MESSAGE Reconciled 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:59.214
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:59.215
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:59.218
+!MESSAGE Validated 1. Took 49 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:40:59.763
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:00.097
+!MESSAGE onDidCompletionItemSelect:soutm
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:00.170
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:00.610
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:00.611
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:00.612
+!MESSAGE Validated 1. Took 40 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:04.917
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:05.024
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:05.230
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:05.618
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:05.778
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:05.929
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:06.091
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:06.554
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:06.594
+!MESSAGE Reconciled 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:06.888
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:07.377
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:07.378
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:07.379
+!MESSAGE Validated 1. Took 39 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:07.549
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:07.766
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:07.839
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:08.100
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:08.233
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:08.390
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:08.598
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:08.802
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:09.168
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:09.171
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:09.678
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:09.679
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:41:09.680
+!MESSAGE Validated 1. Took 60 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:14.429
+!MESSAGE >> java/validateDocument
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:14.890
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:14.892
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:14.894
+!MESSAGE Validated 1. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:45.077
+!MESSAGE >> java/validateDocument
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:45.083
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:45.312
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:45.802
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:45.803
+!MESSAGE 1 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:43:45.806
+!MESSAGE Validated 1. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:27.541
+!MESSAGE >> java/validateDocument
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:27.568
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:27.830
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:28.303
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:28.305
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:28.308
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:34.697
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:34.762
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:34.971
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:35.162
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:35.376
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:35.605
+!MESSAGE onDidCompletionItemSelect:psvm
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:35.673
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:36.106
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:36.107
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:36.108
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:37.404
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:37.875
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:37.876
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:37.878
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:38.065
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:38.177
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:38.458
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:38.844
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:39.261
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:39.262
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:39.262
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:40.114
+!MESSAGE Reconciled 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:40.207
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:40.281
+!MESSAGE Reconciled 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:40.426
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:40.502
+!MESSAGE onDidCompletionItemSelect:sout
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:40.576
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.049
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.049
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.050
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.500
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.507
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.721
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.807
+!MESSAGE Reconciled 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:41.979
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:42.147
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:42.189
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:42.277
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:42.770
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:42.893
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:43.101
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:43.268
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:43.411
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:43.573
+!MESSAGE Reconciled 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:43.885
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:43.889
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:44.358
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:44.358
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:44.360
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:44.694
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:44.745
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.104
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.107
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.275
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.468
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.618
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.825
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:45.907
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.112
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.191
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.391
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.527
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.542
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.596
+!MESSAGE Reconciled 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:46.920
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.238
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.391
+!MESSAGE Reconciled 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.546
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.611
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.650
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.834
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:47.988
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:48.164
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:48.316
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:48.622
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:48.625
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:48.780
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:48.866
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.082
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.293
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.376
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.805
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.806
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.807
+!MESSAGE Validated 1. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:49.903
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:50.045
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:50.177
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:50.312
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:50.436
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:50.788
+!MESSAGE Reconciled 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:50.790
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:51.212
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:51.213
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:44:51.214
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:31.175
+!MESSAGE >> java/validateDocument
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:31.649
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:31.649
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:31.650
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:36.272
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:36.746
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:36.746
+!MESSAGE 0 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:45:36.748
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:49:15.000
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:49:15.008
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:49:15.055
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:49:15.092
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2025-06-11 13:50:47.893 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  --pipe=/run/user/1000/lsp-5132252a6db76ba430253f8accd301e3.sock
+Command-line arguments:  -data /home/jayeshc/.config/Code/User/workspaceStorage/b4db65704b146a87d5e507798900891e/redhat.java/jdt_ws --pipe=/run/user/1000/lsp-5132252a6db76ba430253f8accd301e3.sock
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:54.279
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:54.487
+!MESSAGE Started org.eclipse.buildship.core 150ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:54.489
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:55.081
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:55.139
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:55.143
+!MESSAGE Initializing Java Language Server 1.47.0.202505150330
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:56.811
+!MESSAGE ProjectRegistryRefreshJob finished 2319ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.578
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.579
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.581
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.584
+!MESSAGE Non-Static Commands: [java.intellicode.enable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.586
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.587
+!MESSAGE Non-Static Commands: [java.gradle.delegateTest]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.588
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.589
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.591
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.592
+!MESSAGE Non-Static Commands: [java.project.refreshLib, java.project.checkImportStatus, java.project.list, java.project.generateJar, java.project.getMainClasses, java.getPackageData, java.resolvePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.597
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.598
+!MESSAGE Non-Static Commands: [vscode.java.test.jacoco.getCoverageDetail, vscode.java.test.findJavaProjects, vscode.java.test.findTestPackagesAndTypes, vscode.java.test.findTestTypesAndMethods, vscode.java.test.resolvePath, vscode.java.test.findTestLocation, vscode.java.test.get.testpath, vscode.java.test.findDirectTestChildrenForClass, vscode.java.test.navigateToTestOrTarget, vscode.java.test.junit.argument, vscode.java.test.generateTests]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.599
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.600
+!MESSAGE Non-Static Commands: [java.maven.initializeSearcher, java.maven.searchArtifact, java.maven.addDependency, java.maven.controlContext]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.679
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:58.899
+!MESSAGE RepositoryRegistryUpdateJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:59.020
+!MESSAGE Workspace initialized in 122ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:59.035
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:59.326
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:59.327
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:50:59.341
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:51:34.735
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:51:34.743
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:51:34.836
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:51:34.855
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:

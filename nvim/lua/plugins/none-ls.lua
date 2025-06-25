@@ -31,7 +31,10 @@ return {
 
 				-- Python Linting and Formatting
 				null_ls.builtins.formatting.black,
-				null_ls.builtins.diagnostics.pylint,
+				require("none-ls.diagnostics.ruff"),
+
+                -- Shell Linting and Formatting
+                null_ls.builtins.formatting.shfmt,
 			},
 		})
 

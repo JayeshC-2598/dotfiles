@@ -1,0 +1,214 @@
+!SESSION 2025-06-11 13:32:02.353 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  --pipe=/run/user/1000/lsp-3118c321462419dd6b3b0e7646d8c33e.sock
+Command-line arguments:  -data /home/jayeshc/.config/Code/User/workspaceStorage/6cfd20dbaa89ace886ad41aac323d0b8/redhat.java/ss_ws --pipe=/run/user/1000/lsp-3118c321462419dd6b3b0e7646d8c33e.sock
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:07.002
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:07.100
+!MESSAGE There is no bundle org.eclipse.buildship.core.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:07.106
+!MESSAGE There is no bundle org.eclipse.m2e.core.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:07.119
+!MESSAGE ProjectRegistryRefreshJob finished 11ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:07.977
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.255
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.262
+!MESSAGE Initializing Java Language Server 1.47.0.202505150330
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.658
+!MESSAGE Setting /usr/lib/jvm/java-17-openjdk-amd64 as 'JavaSE-17' environment (id:1749628928609)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.664
+!MESSAGE Setting java.home /usr/lib/jvm/java-17-openjdk-amd64 as default global VM
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.682
+!MESSAGE JVM Runtimes changed, saving new configuration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.724
+!MESSAGE Workspace initialized in 18ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.763
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.783
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.788
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.797
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.803
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.826
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.865
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:08.870
+!MESSAGE Creating the Java project Java Projects_eb4fac80
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:09.083
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:09.089
+!MESSAGE Finished creating the Java project Java Projects_eb4fac80
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:09.158
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:09.160
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:11.871
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:11.922
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2025-06-11 13:32:12.097
+!MESSAGE Problem with codeComplete for file:///media/jayeshc/WORK/Programming/Java%20Programs/Java%20Projects/src/Hello.java
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Hello.java [in <default> [in src [in jdt.ls-java-project]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:556)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:238)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.Openable.getBuffer(Openable.java:280)
+	at org.eclipse.jdt.ls.core.internal.handlers.CompletionHandler.computeContentAssist(CompletionHandler.java:248)
+	at org.eclipse.jdt.ls.core.internal.handlers.CompletionHandler.completion(CompletionHandler.java:121)
+	at org.eclipse.jdt.ls.core.internal.syntaxserver.SyntaxLanguageServer.lambda$12(SyntaxLanguageServer.java:423)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-06-11 13:32:12.103
+!MESSAGE Hello.java [in <default> [in src [in jdt.ls-java-project]]] does not exist
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.127
+!MESSAGE Completion request cancelled
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.158
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.321
+!MESSAGE Reconciled 1. Took 42 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.801
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.819
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.823
+!MESSAGE >> document/foldingRange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.855
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.902
+!MESSAGE >> document/foldingRange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.904
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.907
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:12.919
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:13.036
+!MESSAGE Reconciled 1. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:13.953
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:13.995
+!MESSAGE The preview feature Implicitly Declared Classes and Instance Main Methods is only available with source level 24 and above is of type PreviewFeatureNotSupported
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.008
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.029
+!MESSAGE Validated 1. Took 388 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.135
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.263
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.265
+!MESSAGE >> document/foldingRange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.266
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.271
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.283
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.306
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.313
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.323
+!MESSAGE >> document/foldingRange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.324
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.339
+!MESSAGE User canceled while collecting the document symbols.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:14.449
+!MESSAGE Reconciled 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:15.166
+!MESSAGE begin problem for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:15.171
+!MESSAGE The preview feature Implicitly Declared Classes and Instance Main Methods is only available with source level 24 and above is of type PreviewFeatureNotSupported
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:15.174
+!MESSAGE 3 problems reported for /Hello.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:15.179
+!MESSAGE Validated 1. Took 93 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:18.524
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:18.558
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:18.668
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-06-11 13:32:18.711
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:

@@ -4,17 +4,6 @@
 
 eval "$(starship init bash)"
 
-export XMODIFIERS=@im=fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export CLUTTER_IM_MODULE=fcitx
-export SDL_IM_MODULE=fcitx
-export GLFW_IM_MODULE=ibus
-
-# Set the GTK theme to dark
-export GTK_THEME=Yaru-blue-dark
-
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -114,6 +103,7 @@ alias l.='exa -a | egrep "^\."'
 alias fsb='~/scripts/fsb.sh'
 alias fshow='~/scripts/fshow.sh'
 alias upgrade='~/scripts/upgrade.sh'
+alias monset='~/scripts/monitor_control/main.sh'
 alias g='git'
 alias gaa='git add .'
 alias gs='git status'
@@ -146,7 +136,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. "/usr/share/autojump/autojump.sh"
+[[ -s /home/jayeshc/.autojump/etc/profile.d/autojump.sh ]] && source /home/jayeshc/.autojump/etc/profile.d/autojump.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

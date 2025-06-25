@@ -32,7 +32,7 @@ i3lock \
 --clock                      \
 --indicator                  \
 --time-str="%I:%M %p"        \
---date-str="%A, %Y-%m-%d"       \
+--date-str="%A, %d-%m-%Y"       \
 --keylayout 0                \
 --time-size=60               \
 --date-size=20               \

@@ -7,3 +7,5 @@ else
     bluetoothctl power on
 fi
 
+# Wait 0.5 sec for the state to settle
+sleep 0.5

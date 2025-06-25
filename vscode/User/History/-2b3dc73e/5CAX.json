@@ -1,0 +1,21 @@
+{
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "hidden",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Andromeda",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "editor.mouseWheelZoom": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.commandCenter": false,
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "window.titleBarStyle": "custom",
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "auto",
+    "breadcrumbs.enabled": false,
+    "editor.fontSize": 17,
+    "terminal.integrated.fontSize": 17,
+}

@@ -1,0 +1,16 @@
+{
+    "required_api_version": "2",
+    "name": "Monitor Switcher",
+    "description": "Switch monitor setup using scripts",
+    "developer_name": "Jayesh Chandekar",
+    "icon": "images/icon.png",
+    "preferences": [
+        {
+            "id": "monitor_kw",
+            "type": "keyword",
+            "name": "Monitor Switcher",
+            "description": "Run monitor management scripts",
+            "default_value": "mon"
+        }
+    ]
+}
