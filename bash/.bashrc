@@ -88,6 +88,7 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GTK_THEME=Yaru-blue-dark
 
 # some more ls aliases
 # alias ll='ls -alF --color=auto'
@@ -102,15 +103,16 @@ alias l.='exa -a | egrep "^\."'
 
 alias fsb='~/scripts/fsb.sh'
 alias fshow='~/scripts/fshow.sh'
+alias nscratch='~/scripts/nscratch.sh'
+alias searchpad='~/scripts/searchpad.sh'
 alias upgrade='~/scripts/upgrade.sh'
-alias monset='~/scripts/monitor_control/main.sh'
+# alias monset='~/scripts/monitor_control/main.sh'
 alias g='git'
 alias gaa='git add .'
 alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
 alias ..='cd ..'
-# alias tmux='tmux -u new-session -A -s jaymux'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -160,7 +162,7 @@ cyan="#2CF9ED"
 
 # export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
-export FZF_DEFAULT_OPTS="--height=30% --min-height=1 --layout=reverse --color=fg:${fg},fg+:${fg},hl:${purple},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+export FZF_DEFAULT_OPTS="--height=40% --min-height=1 --layout=reverse --color=fg:${fg},fg+:${fg},hl:${purple},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
 # parse_git_branch() {
 #  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -179,3 +181,8 @@ export FZF_DEFAULT_OPTS="--height=30% --min-height=1 --layout=reverse --color=fg
 # export PS1="${bold}${red}[${lightgreen}\u${blue}@${cyan}\h${white}: ${yellow}\W${red}] ${green}\$(parse_git_branch) \n${white}☯ ${reset}"
 
 export PATH="$HOME/.local/bin:$PATH"
+
+. $HOME/.cargo/env
+source ~/.bash_completion/alacritty
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
