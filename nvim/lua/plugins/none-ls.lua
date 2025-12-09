@@ -11,30 +11,18 @@ return {
 				-- Lua Formatting
 				null_ls.builtins.formatting.stylua,
 
-				-- JavaScript and TypeScript Linting and Formatting
-				null_ls.builtins.formatting.prettierd.with({
-					bin = "prettierd",
-					extra_args = { "--tab-width", "4", "--use-tabs", "false" },
-					filetypes = {
-						"javascript",
-						"javascriptreact",
-						"typescript",
-						"typescriptreact",
-						"css",
-						"json",
-						"scss",
-						"less",
-						"html",
-					},
-				}),
-				require("none-ls.diagnostics.eslint_d"),
-
 				-- Python Linting and Formatting
-				null_ls.builtins.formatting.black,
+                require("none-ls.formatting.ruff"),
 				require("none-ls.diagnostics.ruff"),
 
-                -- Shell Linting and Formatting
-                null_ls.builtins.formatting.shfmt,
+				-- Shell Linting and Formatting
+				null_ls.builtins.formatting.shfmt,
+
+				-- C and C++ Formatting
+				null_ls.builtins.formatting.clang_format.with({
+					filetypes = { "c", "cpp", "h", "hpp" },
+				}),
+				require("none-ls.diagnostics.cpplint"),
 			},
 		})
 

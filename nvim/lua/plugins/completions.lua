@@ -8,14 +8,14 @@ return {
             "saadparwaiz1/cmp_luasnip",
             "rafamadriz/friendly-snippets",
         },
-        config = function()
-            local luasnip = require("luasnip")
-            require("luasnip.loaders.from_vscode").lazy_load()
-
-            -- Extend file types to include HTML snippets for JSX/TSX
-            luasnip.filetype_extend("javascriptreact", { "html" })
-            luasnip.filetype_extend("typescriptreact", { "html" })
-        end,
+        -- config = function()
+        --     local luasnip = require("luasnip")
+        --     require("luasnip.loaders.from_vscode").lazy_load()
+        --
+        --     -- Extend file types to include HTML snippets for JSX/TSX
+        --     luasnip.filetype_extend("javascriptreact", { "html" })
+        --     luasnip.filetype_extend("typescriptreact", { "html" })
+        -- end,
     },
     {
         "hrsh7th/nvim-cmp",
@@ -30,8 +30,8 @@ return {
                     end,
                 },
                 window = {
-                    completion = cmp.config.window.bordered(),
-                    documentation = cmp.config.window.bordered(),
+                    -- completion = cmp.config.window.bordered(),
+                    -- documentation = cmp.config.window.bordered(),
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-b>"] = cmp.mapping.scroll_docs(-4),

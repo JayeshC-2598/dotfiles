@@ -20,13 +20,8 @@ vim.keymap.set("n", "<leader>aa", "ggv<S-g><CR>", { noremap = true, silent = tru
 -- Quit Searching
 vim.keymap.set("n", "<leader>/", ":noh<CR>", { noremap = true, silent = true })
 
--- Show hidden files
-vim.keymap.set(
-    "n",
-    "<leader>hf",
-    ":Telescope find_files hidden=true no_ignore=true<CR>",
-    { noremap = true, silent = true }
-)
-
 -- NvimTree Navigation
 vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>vs", ":vsplit<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>hs", ":split<CR>", { noremap = true, silent = true })
