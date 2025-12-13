@@ -24,7 +24,7 @@ return {
 			options = {
 				diagnostics = "nvim_lsp",
 				mode = "buffers",
-				separator_style = "thin",
+				separator_style = "slant",
 				buffer_size = 20,
 				offsets = {
 					{

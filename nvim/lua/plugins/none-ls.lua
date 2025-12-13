@@ -22,7 +22,7 @@ return {
 				null_ls.builtins.formatting.clang_format.with({
 					filetypes = { "c", "cpp", "h", "hpp" },
 				}),
-				require("none-ls.diagnostics.cpplint"),
+				-- require("none-ls.diagnostics.cpplint"),
 			},
 		})
 

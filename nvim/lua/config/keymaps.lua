@@ -10,8 +10,10 @@ vim.keymap.set("n", "<leader>k", "<C-w>k", {})
 vim.keymap.set("n", "<leader>l", "<C-w>l", {})
 
 -- Tab Navigation
-vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<Tab>", "<Cmd>bn<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-Tab>", "<Cmd>bp<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>d", "<Cmd>bdelete<CR>", { noremap = true, silent = true }) -- Or better: mini.bufremove
 
 -- Select All

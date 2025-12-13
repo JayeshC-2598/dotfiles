@@ -5,13 +5,11 @@ return {
 			options = {
 				icons_enabled = true,
 				theme = "auto",
-				-- component_separators = { left = "", right = "" },
-				-- section_separators = { left = "", right = "" },
 				disabled_filetypes = {
 					statusline = {},
 					winbar = {},
-                    "NvimTree",
-                    "Lazy",
+					"NvimTree",
+					"Lazy",
 				},
 				ignore_focus = {},
 				always_divide_middle = false,
@@ -41,7 +39,7 @@ return {
 		})
 	end,
 
-    -- Moonfly configuration
+	-- Moonfly configuration
 	-- config = function()
 	--     local custom_moonfly = require("lualine.themes.moonfly")
 	--     custom_moonfly.normal.c.bg = "#080808"
