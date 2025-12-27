@@ -4,7 +4,7 @@ return {
 		version = "*",
 		config = function()
 			require("toggleterm").setup({
-                shell = "pwsh",
+                shell = "bash",
 				open_mapping = [[<leader>tt]],
 				hide_numbers = true,
 				shade_filetypes = {},

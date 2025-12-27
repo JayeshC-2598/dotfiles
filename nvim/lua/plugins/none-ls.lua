@@ -12,7 +12,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 
 				-- Python Linting and Formatting
-                require("none-ls.formatting.ruff"),
+				require("none-ls.formatting.ruff"),
 				require("none-ls.diagnostics.ruff"),
 
 				-- Shell Linting and Formatting

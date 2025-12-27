@@ -17,7 +17,7 @@ command_timeout = 1000
 # standalone format to get os glyph on ps1 line,
 # prompt character below
 format = """
-$os$username$hostname:$directory$git_branch$git_status$git_commit$python$cmd_duration
+$username$hostname:$directory$git_branch$git_status$git_commit$python$cmd_duration
 $character
 """
 
@@ -79,48 +79,3 @@ disabled = true
 
 [nodejs]
 disabled = true
-
-[os]
-format = '[$symbol](bold white)'
-disabled = false
-
-[os.symbols]
-Alpaquita = " "
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = "󰍲 "
