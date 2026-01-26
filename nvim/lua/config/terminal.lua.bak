@@ -1,0 +1,33 @@
+local term_buf = nil
+local term_win = nil
+
+local function toggle_terminal()
+	if term_win and vim.api.nvim_win_is_valid(term_win) then
+		vim.api.nvim_win_close(term_win, true)
+		term_win = nil
+		return
+	end
+
+	vim.cmd("botright vsplit")
+	term_win = vim.api.nvim_get_current_win()
+
+	local width = math.floor(vim.o.columns * 0.40)
+	vim.api.nvim_win_set_width(term_win, width)
+
+	if not term_buf or not vim.api.nvim_buf_is_valid(term_buf) then
+		vim.cmd("terminal")
+		term_buf = vim.api.nvim_get_current_buf()
+	else
+		vim.api.nvim_win_set_buf(term_win, term_buf)
+	end
+
+	vim.cmd("startinsert")
+end
+
+vim.keymap.set("n", "<leader>tt", toggle_terminal, { desc = "Toggle terminal" })
+
+-- Terminal mode (IMPORTANT)
+vim.keymap.set("t", "<leader>tt", function()
+	vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-\\><C-n>", true, false, true), "n", false)
+	toggle_terminal()
+end, { desc = "Toggle vertical terminal" })

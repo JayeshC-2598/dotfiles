@@ -2,10 +2,16 @@ return {
 	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
+		cmd = {
+			"ToggleTerm",
+		},
+		keys = {
+			{ "<leader>tt", "<cmd>ToggleTerm<CR>" },
+		},
 		config = function()
 			require("toggleterm").setup({
-                shell = "bash",
-				open_mapping = [[<leader>tt]],
+				shell = vim.o.shell,
+				-- open_mapping = [[<leader>tt]],
 				hide_numbers = true,
 				shade_filetypes = {},
 				shade_terminals = true,
@@ -14,12 +20,14 @@ return {
 				insert_mappings = true,
 				terminal_mappings = true,
 				persist_size = true,
-				direction = "float",
-				float_opts = {
-					width = 80,
-					height = 20,
-					border = "curved",
-				},
+				direction = "vertical",
+				size = vim.o.columns * 0.40,
+				-- direction = "float",
+				-- float_opts = {
+				-- 	width = 80,
+				-- 	height = 20,
+				-- 	border = "curved",
+				-- },
 				-- highlights = {
 				-- 	Normal = {
 				-- 		guibg = "#080808", -- Background color of the terminal

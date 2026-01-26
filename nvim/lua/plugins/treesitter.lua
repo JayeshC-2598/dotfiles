@@ -1,13 +1,21 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+    event = "BufReadPost",
 	build = ":TSUpdate",
+
 	config = function()
-		local config = require("nvim-treesitter.configs")
-		config.setup({
-			auto_install = true,
-			highlight = { enable = true },
-			indent = { enable = true },
-			autotag = { enable = true },
+        require("nvim-treesitter").setup({
+            install_dir = vim.fn.stdpath("data") .. "/site",
+        })
+
+        require("nvim-treesitter").install({ "c", "cpp", "lua", "vim", "vimdoc", "python" })
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = { "c", "cpp", "python", "lua" },
+			callback = function()
+				vim.treesitter.start()
+				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+			end,
 		})
 	end,
 }

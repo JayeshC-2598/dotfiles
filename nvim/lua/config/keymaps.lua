@@ -12,9 +12,9 @@ vim.keymap.set("n", "<leader>l", "<C-w>l", {})
 -- Tab Navigation
 -- vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", { noremap = true, silent = true })
 -- vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<Tab>", "<Cmd>bn<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<S-Tab>", "<Cmd>bp<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>d", "<Cmd>bdelete<CR>", { noremap = true, silent = true }) -- Or better: mini.bufremove
+vim.keymap.set("n", "<C-l>", "<Cmd>bn<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-h>", "<Cmd>bp<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>d", "<Cmd>bdelete!<CR>", { noremap = true, silent = true }) -- Or better: mini.bufremove
 
 -- Select All
 vim.keymap.set("n", "<leader>aa", "ggv<S-g><CR>", { noremap = true, silent = true })
@@ -22,8 +22,15 @@ vim.keymap.set("n", "<leader>aa", "ggv<S-g><CR>", { noremap = true, silent = tru
 -- Quit Searching
 vim.keymap.set("n", "<leader>/", ":noh<CR>", { noremap = true, silent = true })
 
--- NvimTree Navigation
-vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>hs", ":split<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-h>", "<Cmd>vertical resize -2<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-l>", "<Cmd>vertical resize +2<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-j>", "<Cmd>resize -2<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-k>", "<Cmd>resize +2<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
+
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+
+vim.keymap.set("n", ";", ":")

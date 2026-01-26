@@ -1,5 +1,6 @@
 return {
 	"nvimtools/none-ls.nvim",
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"nvimtools/none-ls-extras.nvim",
 	},
@@ -26,6 +27,7 @@ return {
 			},
 		})
 
+		-- Formatting Shortcut
 		vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, {})
 	end,
 }
