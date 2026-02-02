@@ -33,4 +33,9 @@ vim.keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
 
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
 
-vim.keymap.set("n", ";", ":")
+-- Copy, Paste
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>Y", '"+Y')
+
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
+vim.keymap.set("n", "<leader>p", '"+P')
