@@ -8,10 +8,32 @@ return {
 			install_dir = vim.fn.stdpath("data") .. "/site",
 		})
 
-		require("nvim-treesitter").install({ "c", "cpp", "lua", "vim", "vimdoc", "python", "bash", "tmux" })
+		require("nvim-treesitter").install({
+			"c",
+			"cpp",
+			"lua",
+			"vim",
+			"vimdoc",
+			"python",
+			"bash",
+			"tmux",
+			"html",
+			"css",
+			"javascript",
+		})
 
 		vim.api.nvim_create_autocmd("FileType", {
-			pattern = { "c", "cpp", "python", "lua", "sh", "tmux" },
+			pattern = {
+				"c",
+				"cpp",
+				"python",
+				"lua",
+				"sh",
+				"tmux",
+				"html",
+				"css",
+				"javascript",
+			},
 			callback = function()
 				vim.treesitter.start()
 				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"

@@ -6,7 +6,8 @@ return {
 			"ToggleTerm",
 		},
 		keys = {
-			{ "<leader>tt", "<cmd>ToggleTerm<CR>" },
+			{ "<leader>th", "<cmd>ToggleTerm direction=horizontal size=10<CR>" },
+			{ "<leader>tv", "<cmd>ToggleTerm direction=vertical size=45<CR>" },
 		},
 		config = function()
 			require("toggleterm").setup({
@@ -20,8 +21,8 @@ return {
 				insert_mappings = true,
 				terminal_mappings = true,
 				persist_size = true,
-				direction = "vertical",
-				size = vim.o.columns * 0.40,
+				-- direction = "vertical",
+				-- size = vim.o.columns * 0.40,
 				-- direction = "float",
 				-- float_opts = {
 				-- 	width = 80,
