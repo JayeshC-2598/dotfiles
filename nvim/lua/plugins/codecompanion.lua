@@ -40,7 +40,7 @@ return {
 								},
 							},
 							env = {
-								api_key = os.getenv("GEMINI_API_KEY"),
+								api_key = "your_api_key",
 							},
 						})
 					end,
