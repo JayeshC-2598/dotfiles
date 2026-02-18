@@ -26,8 +26,8 @@ return {
 
 			options = {
 				diagnostics = "nvim_lsp",
-				mode = "buffers",
 				separator_style = "thin",
+				mode = "buffers",
 				offsets = {
 					{
 						filetype = "NvimTree",

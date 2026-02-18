@@ -1,11 +1,11 @@
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
-        event = "InsertEnter",
+		event = "InsertEnter",
 	},
 	{
 		"L3MON4D3/LuaSnip",
-        event = "InsertEnter",
+		event = "InsertEnter",
 		dependencies = {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
@@ -21,7 +21,7 @@ return {
 	},
 	{
 		"hrsh7th/nvim-cmp",
-        event = "InsertEnter",
+		event = "InsertEnter",
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
@@ -35,7 +35,7 @@ return {
 				mapping = cmp.mapping.preset.insert({
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
-					["<C-Space>"] = cmp.mapping.complete(),
+					["<C-a>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
 					["<C-j>"] = cmp.mapping.select_next_item(),
