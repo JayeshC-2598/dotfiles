@@ -22,15 +22,7 @@ return {
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = { "filename" },
 				lualine_x = { "fileformat", "filetype" },
-				lualine_y = {
-					function()
-						local reg = vim.fn.reg_recording()
-						if reg == "" then
-							return ""
-						end
-						return "recording @" .. reg
-					end,
-				},
+				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},
 			inactive_sections = {
@@ -38,15 +30,7 @@ return {
 				lualine_b = {},
 				lualine_c = { "filename" },
 				lualine_x = { "location" },
-				lualine_y = {
-					function()
-						local reg = vim.fn.reg_recording()
-						if reg == "" then
-							return ""
-						end
-						return "recording @" .. reg
-					end,
-				},
+				lualine_y = { "progress" },
 				lualine_z = {},
 			},
 			tabline = {},

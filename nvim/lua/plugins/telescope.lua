@@ -12,7 +12,27 @@ return {
 		},
 
 		config = function()
-			require("telescope").setup()
+			require("telescope").setup({
+				defaults = {
+					sorting_strategy = "ascending",
+					layout_strategy = "vertical",
+					layout_config = {
+						prompt_position = "top",
+					},
+				},
+			})
+		end,
+	},
+
+	{
+		"nvim-telescope/telescope-file-browser.nvim",
+
+		keys = {
+			{ "<C-n>", "<cmd>Telescope file_browser hidden=true no_ignore=true<CR>" },
+		},
+
+		config = function()
+			require("telescope").load_extension("file_browser")
 		end,
 	},
 
